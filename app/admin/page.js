@@ -1,8 +1,13 @@
 import React from 'react'
+import {Button} from '@nextui-org/button'; 
+
 
 const page = () => {
   return (
-    <div>Admin page</div>
+    <>
+    <Button>Click me</Button>
+
+    </>
   )
 }
 

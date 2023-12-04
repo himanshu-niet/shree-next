@@ -16,7 +16,8 @@ const ProductSlider = () => {
         <div className="slick1">
 
           <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-            <SwiperSlide> <div
+            <SwiperSlide> 
+            <div
               className="item-slick1"
               style={{ backgroundImage: "url(images/slide-01.jpg)" }}
             >
@@ -42,7 +43,7 @@ const ProductSlider = () => {
                   </div>
                   <div
                     className="layer-slick1 animated visible-true"
-                    data-appear="zoomIn"
+                    data-appear="zotext-4xlomIn"
                     data-delay={1600}
                   >
                     <a

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import NavSearch from './NavSearch';
+import Link from 'next/link';
 
 const Header = () => {
 
@@ -37,18 +38,18 @@ if(typeof window !== "undefined"){
       Free shipping for standard order over $100
     </div>
     <div className="right-top-bar flex-w h-full">
-      <a href="#" className="flex-c-m trans-04 p-lr-25">
+      <Link href="/help" className="flex-c-m trans-04 p-lr-25">
         Help &amp; FAQs
-      </a>
-      <a href="#" className="flex-c-m trans-04 p-lr-25">
+      </Link>
+      <Link href="/profile" className="flex-c-m trans-04 p-lr-25">
         My Account
-      </a>
-      <a href="#" className="flex-c-m trans-04 p-lr-25">
+      </Link>
+      <Link href="/en" className="flex-c-m trans-04 p-lr-25">
         EN
-      </a>
-      <a href="#" className="flex-c-m trans-04 p-lr-25">
+      </Link>
+      <Link href="/usd" className="flex-c-m trans-04 p-lr-25">
         USD
-      </a>
+      </Link>
     </div>
   </div>
 </div>
@@ -57,52 +58,47 @@ if(typeof window !== "undefined"){
     <div className="wrap-menu-desktop" style={{top:`${fix?'0':''}`}}>
       <nav className="limiter-menu-desktop container">
         {/* Logo desktop */}
-        <a href="#" className="logo">
+        <Link href="/" className="logo">
           <img src="images/icons/logo-01.png" alt="IMG-LOGO" />
-        </a>
+        </Link>
         {/* Menu desktop */}
         <div className="menu-desktop">
           <ul className="main-menu">
             <li className="active-menu">
-              <a href="index.html">Home</a>
-              <ul className="sub-menu">
-                <li>
-                  <a href="index.html">Homepage 1</a>
-                </li>
-                <li>
-                  <a href="home-02.html">Homepage 2</a>
-                </li>
-                <li>
-                  <a href="home-03.html">Homepage 3</a>
-                </li>
-              </ul>
+              <Link href="/">Home</Link>
+              
             </li>
             <li>
-              <a href="product.html">Shop</a>
-            </li>
-            <li className="label1" data-label1="hot">
-              <a href="shoping-cart.html">Features</a>
+              <Link href="/product">Shop</Link>
             </li>
             <li>
-              <a href="blog.html">Blog</a>
+            <a  href="#">Category</a>
+            <ul class="sub-menu">
+              <li><Link href="/product">Mens</Link></li>
+              <li><Link href="/product">Womens</Link></li>
+              <li><Link href="/product">Kids</Link></li>
+            </ul>
+          </li>
+           
+            <li>
+              <Link href="/about">About</Link>
             </li>
             <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>
         {/* Icon header */}
         <div className="wrap-icon-header flex-w flex-r-m">
         <NavSearch/>
+        <Link href="shopingcart">
           <div
             className="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
             data-notify={2}
           >
             <i className="zmdi zmdi-shopping-cart" />
           </div>
+          </Link>
           <a
             href="#"
             className="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti"
@@ -118,9 +114,9 @@ if(typeof window !== "undefined"){
   <div className="wrap-header-mobile">
     {/* Logo moblie */}
     <div className="logo-mobile">
-      <a href="index.html">
+      <Link href="/">
         <img src="images/icons/logo-01.png" alt="IMG-LOGO" />
-      </a>
+      </Link>
     </div>
     {/* Icon header */}
     <div className="wrap-icon-header flex-w flex-r-m m-r-15">
@@ -176,24 +172,25 @@ if(typeof window !== "undefined"){
     </ul>
     <ul className="main-menu-m">
     <li>
-    <a href="product.html">Home</a>
+    <Link href="/product">Home</Link>
   </li>
       <li>
-        <a href="product.html">Shop</a>
+        <Link href="/product">Shop</Link>
+      </li>
+     
+      <li>
+      <a >Category</a>
+      <ul class="sub-menu">
+        <li><a href="index.html">Homepage 1</a></li>
+        <li><a href="home-02.html">Homepage 2</a></li>
+        <li><a href="home-03.html">Homepage 3</a></li>
+      </ul>
+    </li>
+      <li>
+        <Link href="/about">About</Link>
       </li>
       <li>
-        <a href="shoping-cart.html" className="label1 rs1" data-label1="hot">
-          Features
-        </a>
-      </li>
-      <li>
-        <a href="blog.html">Blog</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
+        <Link href="/contact">Contact</Link>
       </li>
     </ul>
   </div>

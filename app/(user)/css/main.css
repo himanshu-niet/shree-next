@@ -41,60 +41,60 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 @font-face {
   font-family: Poppins-Regular;
-  src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+  src: url('/fonts/Poppins/Poppins-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Light;
-  src: url('../fonts/Poppins/Poppins-Light.ttf'); 
+  src: url('/fonts/Poppins/Poppins-Light.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-ExtraLight;
-  src: url('../fonts/Poppins/Poppins-ExtraLight.ttf'); 
+  src: url('/fonts/Poppins/Poppins-ExtraLight.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Medium;
-  src: url('../fonts/Poppins/Poppins-Medium.ttf'); 
+  src: url('/fonts/Poppins/Poppins-Medium.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Italic;
-  src: url('../fonts/Poppins/Poppins-Italic.ttf'); 
+  src: url('/fonts/Poppins/Poppins-Italic.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-Bold;
-  src: url('../fonts/Poppins/Poppins-Bold.ttf'); 
+  src: url('/fonts/Poppins/Poppins-Bold.ttf'); 
 }
 
 @font-face {
   font-family: Poppins-SemiBold;
-  src: url('../fonts/Poppins/Poppins-SemiBold.ttf'); 
+  src: url('/fonts/Poppins/Poppins-SemiBold.ttf'); 
 }
 
 
 /*---------------------------------------------*/
 @font-face {
   font-family: PlayfairDisplay-Regular;
-  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf'); 
+  src: url('/fonts/PlayfairDisplay/PlayfairDisplay-Regular.ttf'); 
 }
 
 @font-face {
   font-family: PlayfairDisplay-Bold;
-  src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf'); 
+  src: url('/fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf'); 
 }
 
 /*---------------------------------------------*/
 @font-face {
   font-family: Montserrat-Regular;
-  src: url('../fonts/Montserrat/Montserrat-Regular.ttf'); 
+  src: url('/fonts/Montserrat/Montserrat-Regular.ttf'); 
 }
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url('../fonts/Montserrat/Montserrat-Bold.ttf'); 
+  src: url('/fonts/Montserrat/Montserrat-Bold.ttf'); 
 }
 
 
@@ -1529,13 +1529,13 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 }
 
 button.mfp-arrow-right {
-  background-image: url(../images/icons/icon-next.png);
+  background-image: url(/images/icons/icon-next.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 button.mfp-arrow-left {
-  background-image: url(../images/icons/icon-prev.png);
+  background-image: url(/images/icons/icon-prev.png);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -1548,7 +1548,7 @@ button.mfp-close {
   right: 0;
   top: 0;
   color: transparent !important;
-  background-image: url(../images/icons/icon-close.png);
+  background-image: url(/images/icons/icon-close.png);
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer !important;
@@ -1984,8 +1984,16 @@ input.num-product::-webkit-inner-spin-button {
   position: relative;
   border: 1px solid #e6e6e6;
 }
+.block1-hero {
+  position: relative;
+  
+}
 
 .block1-txt {
+  background-color: rgba(103,117,214,0.0);
+}
+
+.block1-txt-hero {
   background-color: rgba(103,117,214,0.0);
 }
 
@@ -2017,7 +2025,19 @@ input.num-product::-webkit-inner-spin-button {
   background-color: rgba(103,117,214,0.8);
 }
 
+
+.block1-txt-hero:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
 .block1-txt:hover .block1-txt-child2 {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.block1-txt-hero:hover .block1-txt-child2 {
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -2032,11 +2052,27 @@ input.num-product::-webkit-inner-spin-button {
   -o-transform: translateY(0%);
   transform: translateY(0%);
 }
+.block1-txt-hero:hover .block1-link {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
 
 .block1-txt:hover .block1-name,
 .block1-txt:hover .block1-info {
   color: #fff;
 }
+
+.block1-txt-hero:hover .block1-name,
+.block1-txt-hero:hover .block1-info {
+  color: #fff;
+}
+
+
+
+
 
 /*//////////////////////////////////////////////////////////////////
 [ Block2 ]*/

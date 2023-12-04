@@ -1,5 +1,7 @@
 
 import './globals.css'
+import {Providers} from "./providers";
+
 
 export const metadata = {
   title: 'Shree ecommerce',
@@ -79,14 +81,14 @@ export default function RootLayout({ children }) {
       href="vendor/perfect-scrollbar/perfect-scrollbar.css"
     />
     {/*===============================================================================================*/}
-    <link rel="stylesheet" type="text/css" href="css/util.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-
+    
   
     </head>
-      <body >{children}
+      <body >
+      <Providers>
+      {children}
 
-
+      </Providers>
 
       
       </body>
