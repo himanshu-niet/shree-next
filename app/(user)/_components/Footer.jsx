@@ -75,6 +75,9 @@ const Footer = () => {
               <a href="#" className="fs-18 cl7 hov-cl1 trans-04 m-r-16">
                 <i className="fa fa-pinterest-p" />
               </a>
+              <a href="#" className="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+                <i className="fa fa-close" />
+              </a>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3 p-b-50">
@@ -117,15 +120,12 @@ const Footer = () => {
           </div>
           <p className="stext-107 cl6 txt-center">
             {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-            Copyright © All rights reserved | Made with{" "}
-            <i className="fa fa-heart-o" aria-hidden="true" /> by{" "}
-            <a href="https://colorlib.com" target="_blank">
-              Colorlib
+            Copyright © 2023 Bunkar Banaras. All rights reserved | Developed by 
+            {" "}
+            <a href="https://cybronical.com/" target="_blank">
+            Cybronical India Pvt. Ltd
             </a>{" "}
-            &amp; distributed by{" "}
-            <a href="https://themewagon.com" target="_blank">
-              ThemeWagon
-            </a>
+            
             {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
           </p>
         </div>

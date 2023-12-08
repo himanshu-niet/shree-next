@@ -6,7 +6,7 @@ const Product = ({item}) => {
     {/* Block2 */}
     <div className="block2">
       <div className="block2-pic hov-img0">
-        <img src="images/product-01.jpg" alt="IMG-PRODUCT" />
+        <img src={item.src} alt="IMG-PRODUCT" />
         <a
           href="#"
           className="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"
@@ -22,7 +22,7 @@ const Product = ({item}) => {
           >
             Esprit Ruffle Shirt
           </a>
-          <span className="stext-105 cl3">$16.64</span>
+          <span className="stext-105 cl3">Rs.{item.price}</span>
         </div>
         <div className="block2-txt-child2 flex-r p-t-3">
           <a

@@ -13,6 +13,11 @@ const Hero = () => {
    
     <section className=" p-b-54">
     <div className="container">
+
+    <div className="p-b-10">
+      <h3 className="ltext-103 cl5 mb-5 ">More Collection</h3>
+    </div>
+
       <div className="p-b-10">
       
       
@@ -26,20 +31,16 @@ const Hero = () => {
         href="product.html"
         className="block1-txt-hero ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3"
       >
-        <div className="block1-txt-child1 flex-col-l md:collapse">
-          <span className="block1-name ltext-102 trans-04 p-b-8">Men</span>
+        <div className="block1-txt-child1 flex-col-l ">
+          <span className="block1-name ltext-102 trans-04 p-b-8"> Tussar Silk Sarees</span>
           <span className="block1-info stext-102 trans-04">
-            Spring 2018
+          New Arrival
           </span>
         </div>
+       
 
 
-        <div className="block1-txt-child1 flex-col-l collapse md:visible">
-          <span className="block1-name ltext-201 trans-04 p-b-8">Men</span>
-          <span className="block1-info ltext-102 trans-04">
-            Spring 2018
-          </span>
-        </div>
+        
 
         <div className="block1-txt-child2 p-b-4 trans-05">
           <div className="block1-link stext-101 cl0 trans-09">Shop Now</div>
@@ -54,9 +55,9 @@ const Hero = () => {
         className="block1-txt-hero ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3"
       >
         <div className="block1-txt-child1 flex-col-l">
-          <span className="block1-name ltext-102 trans-04 p-b-8">Men</span>
+          <span className="block1-name ltext-102 trans-04 p-b-8">Kora Silk Sarees</span>
           <span className="block1-info stext-102 trans-04">
-            Spring 2018
+          Best Seller
           </span>
         </div>
         <div className="block1-txt-child2 p-b-4 trans-05">
@@ -72,9 +73,9 @@ const Hero = () => {
       className="block1-txt-hero ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3"
     >
       <div className="block1-txt-child1 flex-col-l">
-        <span className="block1-name ltext-102 trans-04 p-b-8">Men</span>
+        <span className="block1-name ltext-102 trans-04 p-b-8">Organza Sarees</span>
         <span className="block1-info stext-102 trans-04">
-          Spring 2018
+      Trending Product
         </span>
       </div>
       <div className="block1-txt-child2 p-b-4 trans-05">

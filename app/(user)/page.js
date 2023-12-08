@@ -146,7 +146,7 @@ const page = () => {
 <section className="bg0 p-t-23 p-b-140">
   <div className="container">
     <div className="p-b-10">
-      <h3 className="ltext-103 cl5 mb-5 ">Product Overview</h3>
+      <h3 className="ltext-103 cl5 mb-5 ">New To The Shop</h3>
     </div>
    
     <HomeProduct/>
@@ -165,7 +165,6 @@ const page = () => {
 
 <Hero/>
 
-
 <section className=" p-b-54 ">
 <div className="mx-auto mt-10 max-w-7xl px-6 sm:mt-10 lg:px-8">
   <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 shadow-2xl rounded-2xl sm:rounded-3xl sm:px-24 xl:py-32">
@@ -173,8 +172,7 @@ const page = () => {
       Keep Updated
     </h2>
     <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-      Keep pace with SecureCloud advancements! Join our mailing list for
-      selective, noteworthy updates.
+    Get Exclusive Saree Styles & Offers Delivered to Your Inbox!
     </p>
     <form className="mx-auto mt-10 flex max-w-md gap-x-4">
       <label htmlFor="email-address" className="sr-only">
@@ -193,7 +191,7 @@ const page = () => {
         type="submit"
         className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
       >
-        Notify me
+      Subscribe
       </button>
     </form>
     <svg
