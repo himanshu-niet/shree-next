@@ -9,9 +9,9 @@ const Product = ({item}) => {
         <img src={item.src} alt="IMG-PRODUCT" />
         <a
           href="#"
-          className="block2-btn flex-c-m stext-103 cl2 size-102 bg0 bor2 hov-btn1 p-lr-15 trans-04 js-show-modal1"
+          className="block2-btn flex-c-m stext-103  size-102 btn-m-lm p-lr-15 trans-04 js-show-modal1"
         >
-          Quick View
+          Add To Cart
         </a>
       </div>
       <div className="block2-txt flex-w flex-t p-t-14">

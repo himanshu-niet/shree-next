@@ -26,7 +26,7 @@ const Hero = () => {
       <div className='grid md:grid-cols-3 gap-x-4 gap-y-3 grid-flow-row-dense'>
      
       <div className="block1-hero wrap-pic-w row-span-2 md:col-span-2">
-      <img src="images/slide-01.jpg" alt="IMG-BANNER" />
+      <img src="imgHero/bg2.jpg" alt="IMG-BANNER" />
       <a
         href="product.html"
         className="block1-txt-hero ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3"
@@ -49,7 +49,7 @@ const Hero = () => {
     </div>
      
       <div className="block1 wrap-pic-w">
-      <img src="images/slide-01.jpg" alt="IMG-BANNER" />
+      <img src="imgHero/bg3.jpg" alt="IMG-BANNER" />
       <a
         href="product.html"
         className="block1-txt-hero ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3"
@@ -67,7 +67,7 @@ const Hero = () => {
     </div>
 
     <div className="block1 wrap-pic-w">
-    <img src="images/slide-01.jpg" alt="IMG-BANNER" />
+    <img src="imgHero/bg1.jpg" alt="IMG-BANNER" />
     <a
       href="product.html"
       className="block1-txt-hero ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3"

@@ -38,7 +38,7 @@ const Header = () => {
         <div className="top-bar">
           <div className="content-topbar flex-sb-m h-full container">
             <div className="left-top-bar">
-              Free shipping for standard order over $100
+            Free National shipping for standard order over ₹10000
             </div>
             <div className="right-top-bar flex-w h-full">
               <Link href="/help" className="flex-c-m trans-04 p-lr-25">
@@ -47,12 +47,7 @@ const Header = () => {
               <Link href="/profile" className="flex-c-m trans-04 p-lr-25">
                 My Account
               </Link>
-              <Link href="/en" className="flex-c-m trans-04 p-lr-25">
-                EN
-              </Link>
-              <Link href="/usd" className="flex-c-m trans-04 p-lr-25">
-                USD
-              </Link>
+              
             </div>
           </div>
         </div>
@@ -62,7 +57,7 @@ const Header = () => {
           <nav className="limiter-menu-desktop container">
             {/* Logo desktop */}
             <Link href="/" className="logo">
-              <img src="images/icons/logo-01.png" alt="IMG-LOGO" />
+              <img src="logo.png" alt="IMG-LOGO" />
             </Link>
             {/* Menu desktop */}
             <div className="menu-desktop">
@@ -93,15 +88,9 @@ const Header = () => {
                         <li><Link href="/product">Jaal Work</Link></li>
                         <li><Link href="/product">Kadua Motifs</Link></li>
                         <li><Link href="/product">Kadua Jangla</Link></li>
-
                       </ul></li>
-
-
-
-
                     <li><Link href="/product">Tussar Silk Sarees</Link>
                     </li>
-
                     <li><Link href="/product">Kora Silk Sarees</Link></li>
                     <li><Link href="/product">Organza Sarees</Link></li>
                     <li><Link href="/product">Chiffon Sarees</Link></li>
@@ -140,7 +129,7 @@ const Header = () => {
         {/* Logo moblie */}
         <div className="logo-mobile">
           <Link href="/">
-            <img src="images/icons/logo-01.png" alt="IMG-LOGO" />
+            <img src="logo.png" alt="IMG-LOGO" />
           </Link>
         </div>
         {/* Icon header */}
@@ -180,12 +169,7 @@ const Header = () => {
               <a href="#" className="flex-c-m p-lr-10 trans-04">
                 My Account
               </a>
-              <a href="#" className="flex-c-m p-lr-10 trans-04">
-                EN
-              </a>
-              <a href="#" className="flex-c-m p-lr-10 trans-04">
-                USD
-              </a>
+             
             </div>
           </li>
         </ul>

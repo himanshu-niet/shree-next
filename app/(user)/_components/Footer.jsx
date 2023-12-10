@@ -11,25 +11,27 @@ const Footer = () => {
         <div className="row">
           <div className="col-sm-6 col-lg-3 p-b-50">
             <h4 className="stext-301 cl0 p-b-30">Categories</h4>
+            
+         
             <ul>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl7 hov-cl1 trans-04">
-                  Women
+                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+                Georgette Sarees
                 </a>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl7 hov-cl1 trans-04">
-                  Men
+                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+                Katan Silk Sarees
                 </a>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl7 hov-cl1 trans-04">
-                  Shoes
+                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+                Tussar Silk Sarees
                 </a>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl7 hov-cl1 trans-04">
-                  Watches
+                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+                Kora Silk Sarees
                 </a>
               </li>
             </ul>
@@ -38,22 +40,22 @@ const Footer = () => {
             <h4 className="stext-301 cl0 p-b-30">Help</h4>
             <ul>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl7 hov-cl1 trans-04">
+                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
                   Track Order
                 </a>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl7 hov-cl1 trans-04">
+                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
                   Returns
                 </a>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl7 hov-cl1 trans-04">
+                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
                   Shipping
                 </a>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl7 hov-cl1 trans-04">
+                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
                   FAQs
                 </a>
               </li>
@@ -61,31 +63,34 @@ const Footer = () => {
           </div>
           <div className="col-sm-6 col-lg-3 p-b-50">
             <h4 className="stext-301 cl0 p-b-30">GET IN TOUCH</h4>
-            <p className="stext-107 cl7 size-201">
-              Any questions? Let us know in store at 8th floor, 379 Hudson St, New
-              York, NY 10018 or call us on (+1) 96 716 6879
+            <p className="stext-107 cl0 size-201">
+              Any questions? Let us know in store at Shop No. 947 Walidpur Market Road, Mau, Mohinuddinpur, Uttar Pradesh 276405 or call us on (+91) 998 4858 991
             </p>
             <div className="p-t-27">
-              <a href="#" className="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+              <a href="https://www.facebook.com/banarasisilksarees1?mibextid=LQQJ4d" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
                 <i className="fa fa-facebook" />
               </a>
-              <a href="#" className="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+              <a href="https://www.instagram.com/anambanarasi/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
                 <i className="fa fa-instagram" />
               </a>
-              <a href="#" className="fs-18 cl7 hov-cl1 trans-04 m-r-16">
+              <a href="#" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
                 <i className="fa fa-pinterest-p" />
+                <i class="fa-brands fa-x-twitter"></i>
               </a>
-              <a href="#" className="fs-18 cl7 hov-cl1 trans-04 m-r-16">
-                <i className="fa fa-close" />
+              <a href="https://www.google.com/maps?q=Anam+Banarasi+Silk+House,+Walidpur+Market+Rd,+Mau,+Mohinuddinpur,+Uttar+Pradesh+276405&ftid=0x399190884991bea1:0x92f1e789ce800a14&hl=en-IN&gl=in&entry=gps&lucs=,47071704,47069508&g_ep=CAISDDYuODYuMS4xNTU2MBgAINeCAyoSLDQ3MDcxNzA0LDQ3MDY5NTA4QgJJTg%3D%3D&g_st=iw" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
+                <i className="fa fa-map-marker" />
               </a>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3 p-b-50">
             <h4 className="stext-301 cl0 p-b-30">Newsletter</h4>
+            <p className="stext-107 cl0 size-201">
+            Get Exclusive Saree Styles & Offers Delivered to Your Inbox!
+          </p>
             <form>
               <div className="wrap-input1 w-full p-b-4">
                 <input
-                  className="input1 bg-none plh1 stext-107 cl7"
+                  className="input1 bg-none plh1 stext-107 cl0"
                   type="text"
                   name="email"
                   placeholder="email@example.com"
@@ -93,7 +98,7 @@ const Footer = () => {
                 <div className="focus-input1 trans-04" />
               </div>
               <div className="p-t-18">
-                <button className="flex-c-m stext-101 cl0 size-103 bg1 bor1 hov-btn2 p-lr-15 trans-04">
+                <button className="flex-c-m stext-101 size-103  btn-m-lm p-lr-15 trans-04">
                   Subscribe
                 </button>
               </div>
@@ -118,12 +123,12 @@ const Footer = () => {
               <img src="images/icons/icon-pay-05.png" alt="ICON-PAY" />
             </a>
           </div>
-          <p className="stext-107 cl6 txt-center">
+          <p className="stext-107 cl0 txt-center">
             {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
             Copyright © 2023 Bunkar Banaras. All rights reserved | Developed by 
             {" "}
             <a href="https://cybronical.com/" target="_blank">
-            Cybronical India Pvt. Ltd
+            Cybronical India
             </a>{" "}
             
             {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}

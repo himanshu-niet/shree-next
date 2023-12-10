@@ -20,32 +20,27 @@ const ProductOperation = () => {
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
             data-filter=".women"
           >
-            Women
+          Georgette Sarees
           </button>
           <button
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
             data-filter=".men"
           >
-            Men
+          Katan Silk Sarees
           </button>
           <button
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
             data-filter=".bag"
           >
-            Bag
+          Tussar Silk Sarees
           </button>
           <button
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
             data-filter=".shoes"
           >
-            Shoes
+          Kora Silk Sarees
           </button>
-          <button
-            className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
-            data-filter=".watches"
-          >
-            Watches
-          </button>
+        
         </div>
 
 
@@ -88,27 +83,14 @@ const ProductOperation = () => {
             <div className="filter-col1 p-r-15 p-b-27">
               <div className="mtext-102 cl2 p-b-15">Sort By</div>
               <ul>
-                <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
-                    Default
-                  </a>
-                </li>
-                <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
-                    Popularity
-                  </a>
-                </li>
-                <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
-                    Average rating
-                  </a>
-                </li>
+             
+               
                 <li className="p-b-6">
                   <a
                     href="#"
                     className="filter-link stext-106 trans-04 filter-link-active"
                   >
-                    Newness
+                    Newest
                   </a>
                 </li>
                 <li className="p-b-6">
@@ -136,29 +118,25 @@ const ProductOperation = () => {
                 </li>
                 <li className="p-b-6">
                   <a href="#" className="filter-link stext-106 trans-04">
-                    $0.00 - $50.00
+                    ₹0 - ₹5000
                   </a>
                 </li>
                 <li className="p-b-6">
                   <a href="#" className="filter-link stext-106 trans-04">
-                    $50.00 - $100.00
+                    ₹5001 - ₹10000
                   </a>
                 </li>
                 <li className="p-b-6">
                   <a href="#" className="filter-link stext-106 trans-04">
-                    $100.00 - $150.00
+                    ₹10001 - ₹15000
                   </a>
                 </li>
                 <li className="p-b-6">
                   <a href="#" className="filter-link stext-106 trans-04">
-                    $150.00 - $200.00
+                    ₹15001+
                   </a>
                 </li>
-                <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
-                    $200.00+
-                  </a>
-                </li>
+               
               </ul>
             </div>
             <div className="filter-col3 p-r-15 p-b-27">
@@ -189,12 +167,12 @@ const ProductOperation = () => {
                 <li className="p-b-6">
                   <span
                     className="fs-15 lh-12 m-r-6"
-                    style={{ color: "#b3b3b3" }}
+                    style={{ color: "pink" }}
                   >
                     <i className="zmdi zmdi-circle" />
                   </span>
                   <a href="#" className="filter-link stext-106 trans-04">
-                    Grey
+                    Pink
                   </a>
                 </li>
                 <li className="p-b-6">
@@ -224,7 +202,7 @@ const ProductOperation = () => {
                     <i className="zmdi zmdi-circle-o" />
                   </span>
                   <a href="#" className="filter-link stext-106 trans-04">
-                    White
+                  uncategorized
                   </a>
                 </li>
               </ul>
@@ -236,32 +214,48 @@ const ProductOperation = () => {
                   href="#"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
-                  Fashion
+                Silver Zari
                 </a>
                 <a
                   href="#"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
-                  Lifestyle
+                Water Zari
                 </a>
                 <a
                   href="#"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
-                  Denim
+                Jaal Work
                 </a>
+                <a
+                href="#"
+                className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+              >
+              Gold Zari
+              </a>
                 <a
                   href="#"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
-                  Streetstyle
+                Kadua Motifs
                 </a>
+                <a
+                href="#"
+                className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
+              >
+              Antique Zari
+              </a>
                 <a
                   href="#"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
-                  Crafts
+                Kadua Jangla
                 </a>
+
+               
+
+                
               </div>
             </div>
           </div>

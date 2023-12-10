@@ -4,46 +4,26 @@ const page = () => {
   return (
     <>
     {/* Title page */}
-    <section
-      className="bg-img1 txt-center p-lr-15 p-tb-92 mt-20"
-      style={{ backgroundImage: 'url("images/bg-01.jpg")' }}
-    >
-      <h2 className="ltext-105 cl0 txt-center">About</h2>
-    </section>
+   
     {/* Content page */}
-    <section className="bg0 p-t-75 p-b-120">
+    <section className="bg0 p-t-120 p-b-120">
       <div className="container">
         <div className="row p-b-148">
           <div className="col-md-7 col-lg-8">
             <div className="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
               <h3 className="mtext-111 cl2 p-b-16">Our Story</h3>
               <p className="stext-113 cl6 p-b-26">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                consequat consequat enim, non auctor massa ultrices non. Morbi sed
-                odio massa. Quisque at vehicula tellus, sed tincidunt augue. Orci
-                varius natoque penatibus et magnis dis parturient montes, nascetur
-                ridiculus mus. Maecenas varius egestas diam, eu sodales metus
-                scelerisque congue. Pellentesque habitant morbi tristique senectus
-                et netus et malesuada fames ac turpis egestas. Maecenas gravida
-                justo eu arcu egestas convallis. Nullam eu erat bibendum, tempus
-                ipsum eget, dictum enim. Donec non neque ut enim dapibus tincidunt
-                vitae nec augue. Suspendisse potenti. Proin ut est diam. Donec
-                condimentum euismod tortor, eget facilisis diam faucibus et. Morbi
-                a tempor elit.
+              <b>Bunkar Banaras </b>was born from a deep-rooted passion for the artistry and tradition woven into every thread of Indian sarees. Our journey commenced in the heart of Varanasi, a city pulsating with centuries-old craftsmanship and culture. Founded by Mr. Zafar Siddique, our venture began with a vision to honor the heritage of Banarasi sarees while embracing modern aesthetics.
+
+              
               </p>
-              <p className="stext-113 cl6 p-b-26">
-                Donec gravida lorem elit, quis condimentum ex semper sit amet.
-                Fusce eget ligula magna. Aliquam aliquam imperdiet sodales. Ut
-                fringilla turpis in vehicula vehicula. Pellentesque congue ac orci
-                ut gravida. Aliquam erat volutpat. Donec iaculis lectus a arcu
-                facilisis, eu sodales lectus sagittis. Etiam pellentesque, magna
-                vel dictum rutrum, neque justo eleifend elit, vel tincidunt erat
-                arcu ut sem. Sed rutrum, turpis ut commodo efficitur, quam velit
-                convallis ipsum, et maximus enim ligula ac ligula.
+              <p className="stext-113 cl6 p-b-10">
+              Driven by a desire to celebrate the exquisite craftsmanship passed down through generations, Bunkar Banaras embarked on a quest to bring forth the finest handcrafted sarees. Our dedication to preserving the authenticity of Banarasi weaving techniques, coupled with an unwavering commitment to quality, has defined our narrative.
+
               </p>
-              <p className="stext-113 cl6 p-b-26">
-                Any questions? Let us know in store at 8th floor, 379 Hudson St,
-                New York, NY 10018 or call us on (+1) 96 716 6879
+              <p className="stext-113 cl6 ">
+              From the skilled hands of master weavers to the elegant drape adorning our patrons, each saree encapsulates a story of artistry, tradition, and timeless beauty. Our evolution parallels the vibrant tapestry of Varanasi, weaving together innovation with heritage to create sarees that resonate with grace and allure.
+
               </p>
             </div>
           </div>
@@ -59,28 +39,32 @@ const page = () => {
           <div className="order-md-2 col-md-7 col-lg-8 p-b-30">
             <div className="p-t-7 p-l-85 p-l-15-lg p-l-0-md">
               <h3 className="mtext-111 cl2 p-b-16">Our Mission</h3>
-              <p className="stext-113 cl6 p-b-26">
-                Mauris non lacinia magna. Sed nec lobortis dolor. Vestibulum
-                rhoncus dignissim risus, sed consectetur erat. Pellentesque
-                habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis egestas. Nullam maximus mauris sit amet odio convallis, in
-                pharetra magna gravida. Praesent sed nunc fermentum mi molestie
-                tempor. Morbi vitae viverra odio. Pellentesque ac velit egestas,
-                luctus arcu non, laoreet mauris. Sed in ipsum tempor, consequat
-                odio in, porttitor ante. Ut mauris ligula, volutpat in sodales in,
-                porta non odio. Pellentesque tempor urna vitae mi vestibulum, nec
-                venenatis nulla lobortis. Proin at gravida ante. Mauris auctor
-                purus at lacus maximus euismod. Pellentesque vulputate massa ut
-                nisl hendrerit, eget elementum libero iaculis.
+              <p className="stext-113 cl6 p-b-10">
+             <b> At Bunkar Banaras, our mission is two-fold:</b>
+
+               </p>
+              <p className="stext-113 cl6 p-b-10">
+
+             <b> Preserving Heritage:</b> {" "}We are devoted to preserving the rich legacy of Banarasi sarees by collaborating with local artisans and weavers. Through ethical practices and fair trade, we ensure the sustainability of this exquisite craft, empowering artisans and safeguarding their livelihoods.
+              
+              
+              </p>
+              <p className="stext-113 cl6 p-b-10">
+              
+             <b> Empowering Elegance: </b> {" "}We aspire to adorn every woman with the elegance and grace embodied in our sarees. Whether it's for a cherished occasion or an everyday celebration, our commitment to delivering meticulously crafted sarees of unparalleled quality remains unwavering. We aim to be the embodiment of elegance, offering sarees that resonate with both tradition and contemporary allure.
+              
+              </p>
+              <p className="stext-113 cl6 p-b-10">
+              
+              
               </p>
               <div className="bor16 p-l-29 p-b-9 m-t-22">
                 <p className="stext-114 cl6 p-r-40 p-b-11">
-                  Creativity is just connecting things. When you ask creative
-                  people how they did something, they feel a little guilty because
-                  they didn't really do it, they just saw something. It seemed
-                  obvious to them after a while.
+                Join us in this journey as we weave threads of tradition into the fabric of modernity, honoring the heritage of Banarasi sarees while embracing the aspirations of the modern-day connoisseur.
+
                 </p>
-                <span className="stext-111 cl8">- Steve Job’s</span>
+                <span className="stext-111 cl8">- Bunkar Banaras</span>
+
               </div>
             </div>
           </div>

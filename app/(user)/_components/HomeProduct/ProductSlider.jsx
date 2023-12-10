@@ -29,7 +29,7 @@ const ProductSlider = () => {
                     data-delay={0}
                   >
                     <span className="ltext-101 cl2 respon2">
-                      Women Collection 2018
+                    NEW ARRIVAL
                     </span>
                   </div>
                   <div
@@ -38,7 +38,7 @@ const ProductSlider = () => {
                     data-delay={800}
                   >
                     <h2 className="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                      NEW SEASON
+                     ALL PRODUCT
                     </h2>
                   </div>
                   <div
@@ -68,7 +68,7 @@ const ProductSlider = () => {
                     data-delay={0}
                   >
                     <span className="ltext-101 cl2 respon2">
-                      Women Collection 2018
+                      Best Seller
                     </span>
                   </div>
                   <div
@@ -77,7 +77,7 @@ const ProductSlider = () => {
                     data-delay={800}
                   >
                     <h2 className="ltext-201 cl2 p-t-19 p-b-43 respon1">
-                      NEW SEASON
+                    GEORGETTE SAREES
                     </h2>
                   </div>
                   <div

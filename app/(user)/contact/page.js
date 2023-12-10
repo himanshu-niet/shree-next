@@ -4,14 +4,9 @@ const page = () => {
   return (
     <>
   {/* Title page */}
-  <section
-    className="bg-img1 txt-center p-lr-15 p-tb-92 mt-20"
-    style={{ backgroundImage: 'url("images/bg-01.jpg")' }}
-  >
-    <h2 className="ltext-105 cl0 txt-center">Contact</h2>
-  </section>
+  
   {/* Content page */}
-  <section className="bg0 p-t-104 p-b-116">
+  <section className="bg0 p-t-120 p-b-116">
     <div className="container">
       <div className="flex-w flex-tr">
         <div className="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">
@@ -40,7 +35,7 @@ const page = () => {
                 defaultValue={""}
               />
             </div>
-            <button className="flex-c-m stext-101 cl0 size-121 bg3 bor1 hov-btn3 p-lr-15 trans-04 pointer">
+            <button className="flex-c-m stext-101  size-121 btn-m-lm p-lr-15 trans-04 pointer">
               Submit
             </button>
           </form>
@@ -53,8 +48,7 @@ const page = () => {
             <div className="size-212 p-t-2">
               <span className="mtext-110 cl2">Address</span>
               <p className="stext-115 cl6 size-213 p-t-18">
-                Coza Store Center 8th floor, 379 Hudson St, New York, NY 10018
-                US
+           Shop No. 947 Walidpur Market Road, Mau, Mohinuddinpur, Uttar Pradesh 276405
               </p>
             </div>
           </div>
@@ -64,7 +58,7 @@ const page = () => {
             </span>
             <div className="size-212 p-t-2">
               <span className="mtext-110 cl2">Lets Talk</span>
-              <p className="stext-115 cl1 size-213 p-t-18">+1 800 1236879</p>
+              <p className="stext-115 cl1 size-213 p-t-18">+91 998 4858 991</p>
             </div>
           </div>
           <div className="flex-w w-full">
@@ -74,7 +68,7 @@ const page = () => {
             <div className="size-212 p-t-2">
               <span className="mtext-110 cl2">Sale Support</span>
               <p className="stext-115 cl1 size-213 p-t-18">
-                contact@example.com
+              bunkarbanaras@gmail.com
               </p>
             </div>
           </div>

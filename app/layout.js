@@ -4,8 +4,8 @@ import {Providers} from "./providers";
 
 
 export const metadata = {
-  title: 'Shree ecommerce',
-  description: 'Shree ecommerce',
+  title: 'Bunkar Banaras',
+  description: 'Bunkar Banaras',
 }
 
 export default function RootLayout({ children }) {
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {/*===============================================================================================*/}
-    <link rel="icon" type="image/png" href="images/icons/favicon.png" />
+    <link rel="icon" type="image/png" href="logo1.png" />
     {/*===============================================================================================*/}
     <link
       rel="stylesheet"
