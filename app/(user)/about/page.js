@@ -6,12 +6,12 @@ const page = () => {
     {/* Title page */}
    
     {/* Content page */}
-    <section className="bg0 p-t-120 p-b-120">
+    <section className="bg0 p-t-120 p-b-120 about">
       <div className="container">
         <div className="row p-b-148">
           <div className="col-md-7 col-lg-8">
             <div className="p-t-7 p-r-85 p-r-15-lg p-r-0-md">
-              <h3 className="mtext-111 cl2 p-b-16">Our Story</h3>
+              <h3 className="mtext-111 cl1 p-b-16">Our Story</h3>
               <p className="stext-113 cl6 p-b-26">
               <b>Bunkar Banaras </b>was born from a deep-rooted passion for the artistry and tradition woven into every thread of Indian sarees. Our journey commenced in the heart of Varanasi, a city pulsating with centuries-old craftsmanship and culture. Founded by Mr. Zafar Siddique, our venture began with a vision to honor the heritage of Banarasi sarees while embracing modern aesthetics.
 

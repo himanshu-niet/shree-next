@@ -2,8 +2,6 @@ import React from 'react'
 const Faq = () => {
     return (
         <>
-
-
             <div className="container py-5">
                 <div className="p-b-10 mt-28">
                     <h3 className="ltext-103 cl5 mb-5 ">Frequently Asked Questions</h3>
