@@ -14,8 +14,7 @@ const Term = () => {
 <dd className='faq-a'>• To access and use Bunkar Banaras's services, users must create an account.
 <br/>• Users are responsible for maintaining the confidentiality of their account details
 and are liable for any activity conducted through their account.
-<br/>• In case of unauthorized access or any breach of security, users must notify Zara
-Luxury immediately.</dd>
+<br/>• In case of unauthorized access or any breach of security, users must notify Bunkar Banaras immediately.</dd>
 
 
 <dt className='faq-q'>2. Services Offered</dt>

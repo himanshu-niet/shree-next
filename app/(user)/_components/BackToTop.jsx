@@ -1,5 +1,5 @@
 "use client"
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 
 const BackToTop = () =>{
@@ -25,8 +25,11 @@ const scrollToTop = () =>{
 	});
 };
 
-window.addEventListener('scroll', toggleVisible);
-
+useEffect(() => {
+	window.addEventListener('scroll', toggleVisible);
+	  return () => window.removeEventListener("scroll", toggleVisible);
+  });
+  
 return (
 
 	

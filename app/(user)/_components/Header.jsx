@@ -1,7 +1,7 @@
 "use client";
 import { usePathname } from 'next/navigation'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import NavSearch from './NavSearch';
 import Link from 'next/link';
 import Auth from './Auth';
@@ -24,11 +24,10 @@ const Header = () => {
     }
   };
 
-
-  if (typeof window !== "undefined") {
-    window.addEventListener('scroll', toggleVisible);
-
-  }
+useEffect(() => {
+  window.addEventListener('scroll', toggleVisible);
+    return () => window.removeEventListener("scroll", toggleVisible);
+});
 
   return (
     <header>
@@ -67,35 +66,35 @@ const Header = () => {
 
                 </li>
                 <li className={pathname=='/product'?'active-menu':''}>
-                  <Link href="/product">Shop</Link>
+                  <Link href="product">Shop</Link>
                 </li>
                 <li>
                   <a href="#">Category</a>
-                  <ul class="sub-menu">
+                  <ul className="sub-menu">
                     <li><a href="#">Georgette Sarees</a>
-                      <ul class="sub-menu ml-2">
-                        <li><Link href="/product">Silver Zari</Link></li>
-                        <li><Link href="/product">Water Zari</Link></li>
-                        <li><Link href="/product">Meenakari Work</Link></li>
-                        <li><Link href="/product">Antique Zari</Link></li>
-                        <li><Link href="/product">Gold Zari</Link></li>
-                        <li><Link href="/product">Chikankari</Link></li>
-                        <li><Link href="/product">Bandhani</Link></li>
+                      <ul className="sub-menu ml-2">
+                        <li><Link href="product?subCategory=Silver Zari">Silver Zari</Link></li>
+                        <li><Link href="product?subCategory=Water Zari">Water Zari</Link></li>
+                        <li><Link href="product?subCategory=Meenakari Work">Meenakari Work</Link></li>
+                        <li><Link href="product?subCategory=Antique Zari">Antique Zari</Link></li>
+                        <li><Link href="product?subCategory=Gold Zari">Gold Zari</Link></li>
+                        <li><Link href="product?subCategory=Chikankari">Chikankari</Link></li>
+                        <li><Link href="product?subCategory=Bandhani">Bandhani</Link></li>
                       </ul></li>
 
                     <li><a href="#">Katan Silk Sarees</a>
-                      <ul class="sub-menu ml-2">
-                        <li><Link href="/product">Jaal Work</Link></li>
-                        <li><Link href="/product">Kadua Motifs</Link></li>
-                        <li><Link href="/product">Kadua Jangla</Link></li>
+                      <ul className="sub-menu ml-2">
+                        <li><Link href="product?subCategory=Jaal Work">Jaal Work</Link></li>
+                        <li><Link href="product?subCategory=Kadua Motifs">Kadua Motifs</Link></li>
+                        <li><Link href="product?subCategory=Kadua Jangla">Kadua Jangla</Link></li>
                       </ul></li>
-                    <li><Link href="/product">Tussar Silk Sarees</Link>
+                    <li><Link href="product?category=Tussar">Tussar Silk Sarees</Link>
                     </li>
-                    <li><Link href="/product">Kora Silk Sarees</Link></li>
-                    <li><Link href="/product">Organza Sarees</Link></li>
-                    <li><Link href="/product">Chiffon Sarees</Link></li>
-                    <li><Link href="/product">Dupion Silk Saree</Link></li>
-                    <li><Link href="/product">Tissue Sarees</Link></li>
+                    <li><Link href="product?subCategory=Kora">Kora Silk Sarees</Link></li>
+                    <li><Link href="product?subCategory=Organza">Organza Sarees</Link></li>
+                    <li><Link href="product?subCategory=Chiffon">Chiffon Sarees</Link></li>
+                    <li><Link href="product?subCategory=Dupion">Dupion Silk Saree</Link></li>
+                    <li><Link href="product?subCategory=Tissue">Tissue Sarees</Link></li>
 
                   </ul>
                 </li>
@@ -180,41 +179,41 @@ const Header = () => {
 
                 </li>
                 <li>
-                  <Link href="/product">Shop</Link>
+                  <Link href="product">Shop</Link>
                 </li>
                 <li>
                   <a href="#">Category</a>
-                  <ul class="sub-menu">
+                  <ul className="sub-menu">
                     <li><a href="#">Georgette Sarees</a>
-                      <ul class="sub-menu ml-2">
-                        <li><Link href="/product">Silver Zari</Link></li>
-                        <li><Link href="/product">Water Zari</Link></li>
-                        <li><Link href="/product">Meenakari Work</Link></li>
-                        <li><Link href="/product">Antique Zari</Link></li>
-                        <li><Link href="/product">Gold Zari</Link></li>
-                        <li><Link href="/product">Chikankari</Link></li>
-                        <li><Link href="/product">Bandhani</Link></li>
+                      <ul className="sub-menu ml-2">
+                        <li><Link href="product?subCategory=Silver Zari">Silver Zari</Link></li>
+                        <li><Link href="product?subCategory=Water Zari">Water Zari</Link></li>
+                        <li><Link href="product?subCategory=Meenakari Work">Meenakari Work</Link></li>
+                        <li><Link href="product?subCategory=Antique Zari">Antique Zari</Link></li>
+                        <li><Link href="product?subCategory=Gold Zari">Gold Zari</Link></li>
+                        <li><Link href="product?subCategory=Chikankari">Chikankari</Link></li>
+                        <li><Link href="product?subCategory=Bandhani">Bandhani</Link></li>
                       </ul></li>
 
                     <li><a href="#">Katan Silk Sarees</a>
-                      <ul class="sub-menu ml-2">
-                        <li><Link href="/product">Jaal Work</Link></li>
-                        <li><Link href="/product">Kadua Motifs</Link></li>
-                        <li><Link href="/product">Kadua Jangla</Link></li>
+                      <ul className="sub-menu ml-2">
+                        <li><Link href="product?subCategory=Jaal Work">Jaal Work</Link></li>
+                        <li><Link href="product?subCategory=Kadua Motifs">Kadua Motifs</Link></li>
+                        <li><Link href="product?subCategory=Kadua Jangla">Kadua Jangla</Link></li>
 
                       </ul></li>
 
 
 
 
-                    <li><Link href="/product">Tussar Silk Sarees</Link>
+                    <li><Link href="product?category=Katan">Tussar Silk Sarees</Link>
                     </li>
 
-                    <li><Link href="/product">Kora Silk Sarees</Link></li>
-                    <li><Link href="/product">Organza Sarees</Link></li>
-                    <li><Link href="/product">Chiffon Sarees</Link></li>
-                    <li><Link href="/product">Dupion Silk Saree</Link></li>
-                    <li><Link href="/product">Tissue Sarees</Link></li>
+                    <li><Link href="product?category=Kora">Kora Silk Sarees</Link></li>
+                    <li><Link href="product?category=Organza">Organza Sarees</Link></li>
+                    <li><Link href="product?category=Chiffon">Chiffon Sarees</Link></li>
+                    <li><Link href="product?category=Dupion">Dupion Silk Saree</Link></li>
+                    <li><Link href="product?category=Tissue">Tissue Sarees</Link></li>
 
                   </ul>
                 </li>

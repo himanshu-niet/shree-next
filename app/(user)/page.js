@@ -5,8 +5,7 @@ import HomeProduct from './_components/HomeProduct/HomeProduct'
 import ProductSlider from './_components/HomeProduct/ProductSlider'
 
 import Card  from './_components/Card'
-
-import React, { lazy } from 'react';
+import Link from 'next/link'
 
 
 const page = () => {
@@ -37,17 +36,15 @@ const page = () => {
 
     {/* Load more */}
     <div className="flex-c-m flex-w w-full p-t-45">
-      <a
-        href="#"
+      <Link
+        href="product"
         className="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04"
       >
         Load More
-      </a>
+      </Link>
     </div>
   </div>
 </section>
-
-
 
 
 <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
@@ -181,82 +178,6 @@ const page = () => {
 
 
 <Hero/>
-
-
-
-
-
- 
- 
-
-
-
-{/**
-
-<section className=" p-b-54 ">
-<div className="mx-auto mt-10 max-w-7xl px-6 sm:mt-10 lg:px-8">
-  <div className="relative isolate overflow-hidden bg3 px-6 py-24 shadow-2xl rounded-2xl sm:rounded-3xl sm:px-24 xl:py-32">
-    <h2 className="mx-auto max-w-2xl text-center text-3xl font-bold tracking-tight text-white sm:text-4xl">
-      Keep Updated
-    </h2>
-    <p className="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300">
-    Get Exclusive Saree Styles & Offers Delivered to Your Inbox!
-    </p>
-    <form className="mx-auto mt-10 flex max-w-md gap-x-4">
-      <label htmlFor="email-address" className="sr-only">
-        Email address
-      </label>
-      <input
-        id="email-address"
-        name="email"
-        type="email"
-        autoComplete="email"
-        required=""
-        className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
-        placeholder="Enter your email"
-      />
-      <button
-        type="submit"
-        className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-      >
-      Subscribe
-      </button>
-    </form>
-    <svg
-      viewBox="0 0 1024 1024"
-      className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2"
-      aria-hidden="true"
-    >
-      <circle
-        cx={512}
-        cy={512}
-        r={512}
-        fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
-        fillOpacity="0.7"
-      ></circle>
-      <defs>
-        <radialGradient
-          id="759c1415-0410-454c-8f7c-9a820de03641"
-          cx={0}
-          cy={0}
-          r={1}
-          gradientUnits="userSpaceOnUse"
-          gradientTransform="translate(512 512) rotate(90) scale(512)"
-        >
-          <stop stopColor="#95270A" />
-          <stop offset={1} stopColor="#95270A" stopOpacity={0} />
-        </radialGradient>
-      </defs>
-    </svg>
-  </div>
-</div>
-
-
-
-  </section>
-
- */}
-
 
 
   </>

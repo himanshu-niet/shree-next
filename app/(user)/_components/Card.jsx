@@ -3,10 +3,8 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function Card() {
   return (
@@ -14,11 +12,16 @@ export default function Card() {
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        autoplay={ 2000}
-        speed= {800}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
+        navigation={false}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
         breakpoints={{
           499: {
             slidesPerView: 1,
@@ -37,8 +40,7 @@ export default function Card() {
             spaceBetween: 50,
           },
         }}
-        modules={[Pagination]}
-        className="mySwiper"
+
       >
         <SwiperSlide> 
          <div className="relative flex flex-col my-6  text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
@@ -54,9 +56,7 @@ export default function Card() {
             </h5>
             <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
             Unveil the legacy of Banarasi sarees – centuries of tradition woven into every thread. Explore our heritage collection, a testament to timeless craftsmanship and cultural richness.
-            <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-           <b>Clipart suggestion:</b> Traditional loom or an artistic depiction of a weaving pattern.
-           </p>
+           
             </p>
            
            
@@ -78,9 +78,7 @@ export default function Card() {
            </h5>
            <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
            Indulge in the allure of Banarasi grace. Our curated collection showcases sarees that exude sophistication and charm, perfect for every occasion and celebration.
-           <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-          <b>Clipart suggestion:</b>A draped saree or an elegant silhouette.
-          </p>
+           
            </p>
          </div>
        </div>
@@ -101,9 +99,7 @@ export default function Card() {
           <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
           Experience the finesse of handcrafted elegance. Our sarees are meticulously woven by skilled artisans, embodying precision and artistry that transcends generations.
 
-            <p className="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
-           <b>Clipart suggestion:</b> Hands weaving or a detailed illustration of a weaving process.
-           </p>
+            
             </p>
         </div>
       </div>

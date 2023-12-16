@@ -1,5 +1,6 @@
 import React from 'react'
 import BackToTop from './BackToTop'
+import Link from 'next/link'
 
 const Footer = () => {
   return (
@@ -15,24 +16,24 @@ const Footer = () => {
          
             <ul>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+                <Link href="product?category=Georgette" className="stext-107 cl0 hov-cl1 trans-04">
                 Georgette Sarees
-                </a>
+                </Link>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+               <Link href="product?category=Katan" className="stext-107 cl0 hov-cl1 trans-04">
                 Katan Silk Sarees
-                </a>
+               </Link>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+               <Link href="product?category=Tussar"  className="stext-107 cl0 hov-cl1 trans-04">
                 Tussar Silk Sarees
-                </a>
+               </Link>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+               <Link href="product?category=Kora"  className="stext-107 cl0 hov-cl1 trans-04">
                 Kora Silk Sarees
-                </a>
+               </Link>
               </li>
             </ul>
           </div>
@@ -40,24 +41,24 @@ const Footer = () => {
             <h4 className="stext-301 cl0 p-b-30">Help</h4>
             <ul>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
-                  Track Order
-                </a>
+               <Link href="term" className="stext-107 cl0 hov-cl1 trans-04">
+                  Terms & Conditions
+               </Link>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
-                  Returns
-                </a>
+               <Link href="return" className="stext-107 cl0 hov-cl1 trans-04">
+                  Return & Refund
+               </Link>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
-                  Shipping
-                </a>
+               <Link href="policy" className="stext-107 cl0 hov-cl1 trans-04">
+               Privacy & Policy
+               </Link>
               </li>
               <li className="p-b-10">
-                <a href="#" className="stext-107 cl0 hov-cl1 trans-04">
+               <Link href="faqs" className="stext-107 cl0 hov-cl1 trans-04">
                   FAQs
-                </a>
+               </Link>
               </li>
             </ul>
           </div>
@@ -67,19 +68,19 @@ const Footer = () => {
               Any questions? Let us know in store at Shop No. 947 Walidpur Market Road, Mau, Mohinuddinpur, Uttar Pradesh 276405 or call us on (+91) 998 4858 991
             </p>
             <div className="p-t-27">
-              <a href="https://www.facebook.com/banarasisilksarees1?mibextid=LQQJ4d" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
+             <Link href="https://www.facebook.com/banarasisilksarees1?mibextid=LQQJ4d" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
                 <i className="fa fa-facebook" />
-              </a>
-              <a href="https://www.instagram.com/anambanarasi/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
+             </Link>
+             <Link href="https://www.instagram.com/anambanarasi/?igshid=OGQ5ZDc2ODk2ZA%3D%3D" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
                 <i className="fa fa-instagram" />
-              </a>
-              <a href="#" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
+             </Link>
+             <Link href="#" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
                 <i className="fa fa-pinterest-p" />
-                <i class="fa-brands fa-x-twitter"></i>
-              </a>
-              <a href="https://www.google.com/maps?q=Anam+Banarasi+Silk+House,+Walidpur+Market+Rd,+Mau,+Mohinuddinpur,+Uttar+Pradesh+276405&ftid=0x399190884991bea1:0x92f1e789ce800a14&hl=en-IN&gl=in&entry=gps&lucs=,47071704,47069508&g_ep=CAISDDYuODYuMS4xNTU2MBgAINeCAyoSLDQ3MDcxNzA0LDQ3MDY5NTA4QgJJTg%3D%3D&g_st=iw" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
+                <i className="fa-brands fa-x-twitter"></i>
+             </Link>
+             <Link href="https://www.google.com/maps?q=Anam+Banarasi+Silk+House,+Walidpur+Market+Rd,+Mau,+Mohinuddinpur,+Uttar+Pradesh+276405&ftid=0x399190884991bea1:0x92f1e789ce800a14&hl=en-IN&gl=in&entry=gps&lucs=,47071704,47069508&g_ep=CAISDDYuODYuMS4xNTU2MBgAINeCAyoSLDQ3MDcxNzA0LDQ3MDY5NTA4QgJJTg%3D%3D&g_st=iw" className="fs-18 cl0 hov-cl1 trans-04 m-r-16">
                 <i className="fa fa-map-marker" />
-              </a>
+             </Link>
             </div>
           </div>
           <div className="col-sm-6 col-lg-3 p-b-50">
@@ -107,29 +108,29 @@ const Footer = () => {
         </div>
         <div className="p-t-40">
           <div className="flex-c-m flex-w p-b-18">
-            <a href="#" className="m-all-1">
+           <Link href="#" className="m-all-1">
               <img src="images/icons/icon-pay-01.png" alt="ICON-PAY" />
-            </a>
-            <a href="#" className="m-all-1">
+           </Link>
+           <Link href="#" className="m-all-1">
               <img src="images/icons/icon-pay-02.png" alt="ICON-PAY" />
-            </a>
-            <a href="#" className="m-all-1">
+           </Link>
+           <Link href="#" className="m-all-1">
               <img src="images/icons/icon-pay-03.png" alt="ICON-PAY" />
-            </a>
-            <a href="#" className="m-all-1">
+           </Link>
+           <Link href="#" className="m-all-1">
               <img src="images/icons/icon-pay-04.png" alt="ICON-PAY" />
-            </a>
-            <a href="#" className="m-all-1">
+           </Link>
+           <Link href="#" className="m-all-1">
               <img src="images/icons/icon-pay-05.png" alt="ICON-PAY" />
-            </a>
+           </Link>
           </div>
           <p className="stext-107 cl0 txt-center">
             {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
             Copyright © 2023 Bunkar Banaras. All rights reserved | Developed by 
             {" "}
-            <a href="https://cybronical.com/" target="_blank">
+           <Link href="https://cybronical.com/" target="_blank">
             Cybronical India
-            </a>{" "}
+           </Link>{" "}
             
             {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
           </p>
@@ -166,12 +167,12 @@ const Footer = () => {
                           src="images/product-detail-01.jpg"
                           alt="IMG-PRODUCT"
                         />
-                        <a
+                       <Link
                           className="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
                           href="images/product-detail-01.jpg"
                         >
                           <i className="fa fa-expand" />
-                        </a>
+                       </Link>
                       </div>
                     </div>
                     <div
@@ -183,12 +184,12 @@ const Footer = () => {
                           src="images/product-detail-02.jpg"
                           alt="IMG-PRODUCT"
                         />
-                        <a
+                       <Link
                           className="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
                           href="images/product-detail-02.jpg"
                         >
                           <i className="fa fa-expand" />
-                        </a>
+                       </Link>
                       </div>
                     </div>
                     <div
@@ -200,12 +201,12 @@ const Footer = () => {
                           src="images/product-detail-03.jpg"
                           alt="IMG-PRODUCT"
                         />
-                        <a
+                       <Link
                           className="flex-c-m size-108 how-pos1 bor0 fs-16 cl10 bg0 hov-btn3 trans-04"
                           href="images/product-detail-03.jpg"
                         >
                           <i className="fa fa-expand" />
-                        </a>
+                       </Link>
                       </div>
                     </div>
                   </div>
@@ -279,35 +280,35 @@ const Footer = () => {
                 {/*  */}
                 <div className="flex-w flex-m p-l-100 p-t-40 respon7">
                   <div className="flex-m bor9 p-r-10 m-r-11">
-                    <a
+                   <Link
                       href="#"
                       className="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 js-addwish-detail tooltip100"
                       data-tooltip="Add to Wishlist"
                     >
                       <i className="zmdi zmdi-favorite" />
-                    </a>
+                   </Link>
                   </div>
-                  <a
+                 <Link
                     href="#"
                     className="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                     data-tooltip="Facebook"
                   >
                     <i className="fa fa-facebook" />
-                  </a>
-                  <a
+                 </Link>
+                 <Link
                     href="#"
                     className="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                     data-tooltip="Twitter"
                   >
                     <i className="fa fa-twitter" />
-                  </a>
-                  <a
+                 </Link>
+                 <Link
                     href="#"
                     className="fs-14 cl3 hov-cl1 trans-04 lh-10 p-lr-5 p-tb-2 m-r-8 tooltip100"
                     data-tooltip="Google Plus"
                   >
                     <i className="fa fa-google-plus" />
-                  </a>
+                 </Link>
                 </div>
               </div>
             </div>

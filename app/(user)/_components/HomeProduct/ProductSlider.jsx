@@ -3,7 +3,9 @@ import React from 'react'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import Link from 'next/link';
+;
 
 
 const ProductSlider = () => {
@@ -15,7 +17,17 @@ const ProductSlider = () => {
       <div className="">
         <div className="slick1">
 
-          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+          <Swiper 
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper">
             <SwiperSlide> 
             <div
               className="item-slick1"
@@ -28,7 +40,7 @@ const ProductSlider = () => {
                     data-appear="fadeInDown"
                     data-delay={0}
                   >
-                    <span className="ltext-101 cl2 respon2">
+                    <span className="ltext-101 cl1 respon2">
                     NEW ARRIVAL
                     </span>
                   </div>
@@ -37,7 +49,7 @@ const ProductSlider = () => {
                     data-appear="fadeInUp"
                     data-delay={800}
                   >
-                    <h2 className="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                    <h2 className="ltext-201 cl1 p-t-19 p-b-43 respon1">
                      ALL PRODUCT
                     </h2>
                   </div>
@@ -46,12 +58,12 @@ const ProductSlider = () => {
                     data-appear="zotext-4xlomIn"
                     data-delay={1600}
                   >
-                    <a
-                      href="product.html"
+                    <Link
+                    href="product?category=All"
                       className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04"
                     >
                       Shop Now
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -67,7 +79,7 @@ const ProductSlider = () => {
                     data-appear="fadeInDown"
                     data-delay={0}
                   >
-                    <span className="ltext-101 cl2 respon2">
+                    <span className="ltext-101 cl1 respon2">
                       Best Seller
                     </span>
                   </div>
@@ -76,7 +88,7 @@ const ProductSlider = () => {
                     data-appear="fadeInUp"
                     data-delay={800}
                   >
-                    <h2 className="ltext-201 cl2 p-t-19 p-b-43 respon1">
+                    <h2 className="ltext-201 cl1 p-t-19 p-b-43 respon1">
                     GEORGETTE SAREES
                     </h2>
                   </div>
@@ -85,12 +97,12 @@ const ProductSlider = () => {
                     data-appear="zoomIn"
                     data-delay={1600}
                   >
-                    <a
-                      href="product.html"
-                      className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04"
-                    >
-                      Shop Now
-                    </a>
+                  <Link
+                  href="product?category=GEORGETTE"
+                  className="flex-c-m stext-101 cl0 size-101 bg1 bor1 hov-btn1 p-lr-15 trans-04"
+                >
+                  Shop Now
+                </Link>
                   </div>
                 </div>
               </div>

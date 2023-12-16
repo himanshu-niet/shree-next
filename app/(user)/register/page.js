@@ -90,7 +90,7 @@ const page = () => {
                 href="/login"
                 className="font-medium text-primary-600 hover:underline dark:text-primary-500"
               >
-                Login here
+                Sign In
               </Link>
             </p>
           </form>
