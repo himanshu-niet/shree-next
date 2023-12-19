@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductOperation from '../_components/Products/ProductOperation'
+import Link from 'next/link'
 
 const page = () => {
 
@@ -44,7 +45,7 @@ const page = () => {
   
 
   return (
-    <div className="bg0 m-t-100 p-b-140">
+    <div className="bg0  lg:mt-24 p-b-140">
     <div className="container">
     
 
@@ -60,12 +61,12 @@ const page = () => {
         <div className="block2">
           <div className="block2-pic hov-img0">
             <img src={item.src} alt="IMG-PRODUCT" />
-            <a
-            href="#"
+            <Link
+            href="shopingcart"
             className="block2-btn flex-c-m stext-103  size-102 btn-m-lm p-lr-15 trans-04 js-show-modal1"
           >
             Add To Cart
-          </a>
+          </Link>
           </div>
           <div className="block2-txt flex-w flex-t p-t-14">
             <div className="block2-txt-child1 flex-col-l ">
@@ -88,12 +89,12 @@ const page = () => {
       </div>
       {/* Load more */}
       <div className="flex-c-m flex-w w-full p-t-45">
-        <a
+        <Link
           href="#"
           className="flex-c-m stext-101 cl5 size-103 bg2 bor1 hov-btn1 p-lr-15 trans-04"
         >
           Load More
-        </a>
+        </Link>
       </div>
     </div>
   </div>

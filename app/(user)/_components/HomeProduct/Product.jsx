@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const Product = ({item}) => {
@@ -7,12 +8,12 @@ const Product = ({item}) => {
     <div className="block2">
       <div className="block2-pic hov-img0">
         <img src={item.src} alt="IMG-PRODUCT" />
-        <a
-          href="#"
+        <Link
+          href="shopingcart"
           className="block2-btn flex-c-m stext-103  size-102 btn-m-lm p-lr-15 trans-04 js-show-modal1"
         >
           Add To Cart
-        </a>
+        </Link>
       </div>
       <div className="block2-txt flex-w flex-t p-t-14">
         <div className="block2-txt-child1 flex-col-l ">
@@ -34,11 +35,7 @@ const Product = ({item}) => {
               src="images/icons/icon-heart-01.png"
               alt="ICON"
             />
-            <img
-              className="icon-heart2 dis-block trans-04 ab-t-l"
-              src="images/icons/icon-heart-02.png"
-              alt="ICON"
-            />
+           
           </a>
         </div>
       </div>

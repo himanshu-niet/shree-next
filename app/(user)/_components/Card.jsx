@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 
 export default function Card() {
   return (
@@ -16,13 +16,14 @@ export default function Card() {
           delay: 4000,
           disableOnInteraction: false,
         }}
-        pagination={{
-          clickable: true,
-        }}
         navigation={false}
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         className="mySwiper"
         breakpoints={{
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
           499: {
             slidesPerView: 1,
             spaceBetween: 20,

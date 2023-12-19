@@ -6,7 +6,7 @@ const page = () => {
   {/* Title page */}
   
   {/* Content page */}
-  <section className="bg0 p-t-120 p-b-116">
+  <section className="bg0 pt-20 lg:pt-24 p-b-116">
     <div className="container">
       <div className="flex-w flex-tr">
         <div className="size-210 bor10 p-lr-70 p-t-55 p-b-70 p-lr-15-lg w-full-md">

@@ -4,7 +4,7 @@ const page = () => {
   return (
     <>
     {/* breadcrumb */}
-    <div className="container mt-20">
+    <div className="container lg:mt-20">
       <div className="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
         <a href="index.html" className="stext-109 cl8 hov-cl1 trans-04">
           Home
@@ -32,11 +32,11 @@ const page = () => {
                     <tr className="table_row">
                       <td className="column-1">
                         <div className="how-itemcart1">
-                          <img src="images/item-cart-04.jpg" alt="IMG" />
+                          <img src="images/item6.jpg" alt="IMG" />
                         </div>
                       </td>
-                      <td className="column-2">Fresh Strawberries</td>
-                      <td className="column-3">$ 36.00</td>
+                      <td className="column-2">Water Zari</td>
+                      <td className="column-3">₹ 3006.00</td>
                       <td className="column-4">
                         <div className="wrap-num-product flex-w m-l-auto m-r-0">
                           <div className="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
@@ -53,16 +53,16 @@ const page = () => {
                           </div>
                         </div>
                       </td>
-                      <td className="column-5">$ 36.00</td>
+                      <td className="column-5">₹ 3006.00</td>
                     </tr>
                     <tr className="table_row">
                       <td className="column-1">
                         <div className="how-itemcart1">
-                          <img src="images/item-cart-05.jpg" alt="IMG" />
+                          <img src="images/item7.jpg" alt="IMG" />
                         </div>
                       </td>
-                      <td className="column-2">Lightweight Jacket</td>
-                      <td className="column-3">$ 16.00</td>
+                      <td className="column-2">Katan Jaal Work</td>
+                      <td className="column-3">₹ 2000.00</td>
                       <td className="column-4">
                         <div className="wrap-num-product flex-w m-l-auto m-r-0">
                           <div className="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
@@ -79,7 +79,7 @@ const page = () => {
                           </div>
                         </div>
                       </td>
-                      <td className="column-5">$ 16.00</td>
+                      <td className="column-5">₹ 2000.00</td>
                     </tr>
                   </tbody>
                 </table>
@@ -110,7 +110,7 @@ const page = () => {
                   <span className="stext-110 cl2">Subtotal:</span>
                 </div>
                 <div className="size-209">
-                  <span className="mtext-110 cl2">$79.65</span>
+                  <span className="mtext-110 cl2">₹5006.00</span>
                 </div>
               </div>
               <div className="flex-w flex-t bor12 p-t-15 p-b-30">
@@ -127,8 +127,7 @@ const page = () => {
                     <div className="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
                       <select className="js-select2" name="time">
                         <option>Select a country...</option>
-                        <option>USA</option>
-                        <option>UK</option>
+                        <option>India</option>
                       </select>
                       <div className="dropDownSelect2" />
                     </div>
@@ -161,7 +160,7 @@ const page = () => {
                   <span className="mtext-101 cl2">Total:</span>
                 </div>
                 <div className="size-209 p-t-1">
-                  <span className="mtext-110 cl2">$79.65</span>
+                  <span className="mtext-110 cl2">₹5006.00</span>
                 </div>
               </div>
               <button className="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">

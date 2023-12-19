@@ -3152,6 +3152,14 @@ input.num-product::-webkit-inner-spin-button {
   border-radius: 23px;
 }
 
+.btn-w{
+  border-color: rgb(151, 148, 148);
+  box-shadow: 10px 10px 5px lightblue;
+  background-color: white;
+  color: #791106!important;
+  border-radius: 23px;
+}
+
 .btn-m-lm:hover{
   border-color: #95270A;
   background-color: #95270A;

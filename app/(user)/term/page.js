@@ -4,7 +4,7 @@ const Term = () => {
     <div>
 
     <div className="container">
-    <div className="p-b-10 mt-28">
+    <div className="p-b-10 lg:mt-28">
     <h3 className="ltext-103 cl5 mb-5 ">Terms and Conditions</h3>
     </div>
 
