@@ -10,7 +10,13 @@ export async function GET(request){
             where: {
               id: productId,
             },
+            include: {
+                images: {
+                    select: { url: true }, // Include only title
+                  },
+              }
           })
+         
 
         return NextResponse.json({
             success:true,

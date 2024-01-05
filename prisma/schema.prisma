@@ -33,5 +33,14 @@ model Product {
   stock String
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now())
-  images  String
+  images  ProductUrl[]
+}
+
+
+model ProductUrl {
+  url       String
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  @@id([url, productId])
+  @@index([productId])
 }

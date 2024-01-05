@@ -47,41 +47,32 @@ export default function App() {
       price: "",
       discount: "",
       stock: "",
-      desc: ""
+      desc: "",
+      category:"",
+      subCategory:"",
+      color:""
+
     },
     onSubmit: (values) => {
 
-      const formData = new FormData();
-      for (let value in values) {
-        formData.set(value, values[value]);
-      }
+      values['category']=selectedCategory;
+      values['subCategory']=selectedSubcategory;
+      values['color']=selectedColor;
+      values['images']=images;
 
-      formData.set("category", selectedCategory)
-      formData.set("subCategory", selectedSubcategory)
-      formData.set("color",selectedColor)
+      const formData = new FormData();
 
       images.forEach((image) => {
         formData.append("images", image);
       });
 
-
-      formData.forEach((item)=>{
-        console.log(item)
-      })
-
       // const token = getCookie("token");
 
-      axios.post('/api/admin/product', formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-            // token: token
-          }
-        })
+      axios.post('/api/admin/product', values)
         .then(function (response) {
-
+console.log(response)
           alert("Product Added Succesfully")
-          location.href = "/admin/products";
+          // location.href = "/admin/products";
 
         })
         .catch(function (error) {
@@ -115,7 +106,7 @@ export default function App() {
                 Add New Product
               </ModalHeader>
               <ModalBody>
-                <form onSubmit={formik.handleSubmit} encType="multipart/form-data">
+                <form onSubmit={formik.handleSubmit} encType="multipart/form-data" method="POST">
                   {/* Grid */}
                   <div className="grid sm:grid-cols-12 gap-2 sm:gap-6">
                     <div className="sm:col-span-3">

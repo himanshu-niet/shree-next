@@ -1,47 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ProductOperation from '../_components/Products/ProductOperation'
 import Link from 'next/link'
 
 const page = () => {
 
 
-  const data=[
-    
+  useEffect(()=>{
+
+    getApi()
+
+  },[])
+
+  const [data,setData]=useState([]);
+
+  const getApi=async ()=>{
+
+    axios.get("/api/products").then((res)=>{
   
-    {
-      src:"images/item5.jpg",
-      price:12000
-    },
-    {
-      src:"images/item6.jpg",
-      price:2000
-    },
-    {
-      src:"images/item7.jpg",
-      price:3650
-    },
-    {
-      src:"images/item8.jpg",
-      price:7850
-    },
-    {
-      src:"images/cat.jpg",
-      price:5000
-    },
-    {
-      src:"images/cat1.jpg",
-      price:4500
-    },
-    {
-      src:"images/cat3.jpg",
-      price:5550
-    },
-    {
-      src:"images/item4.jpg",
-      price:6400
-    },
-  
-    ]
+      setData(res.data.data)
+     
+    })
+
+  }
+
+  if(!data) return <h1>Loding.....</h1>
+
+ 
   
 
   return (
@@ -60,7 +44,7 @@ const page = () => {
         {/* Block2 */}
         <div className="block2">
           <div className="block2-pic hov-img0">
-            <img src={item.src} alt="IMG-PRODUCT" />
+            <img src={item.images[0]?.url} alt="IMG-PRODUCT" />
             <Link
             href="shopingcart"
             className="block2-btn flex-c-m stext-103  size-102 btn-m-lm p-lr-15 trans-04 js-show-modal1"
@@ -74,7 +58,7 @@ const page = () => {
                 href="product-detail.html"
                 className="stext-104 cl4 hov-cl1 trans-04 js-name-b2 p-b-6"
               >
-                Esprit Ruffle Shirt
+                {item.title}
               </a>
               <span className="stext-105 cl3">Rs. {item.price}</span>
             </div>
