@@ -1,12 +1,33 @@
-import React from 'react'
+"use client"
+import useCartStore from '@/utils/store/cart';
+import Link from 'next/link';
 
+import React from 'react'
 const page = () => {
+
+  const cartItems = useCartStore(state => state.cartItems);
+  console.log(cartItems)
+
+  if (cartItems && cartItems.length < 1) {
+    return (
+      <div className="h-72 flex flex-col items-center justify-center">
+        <h2 className="text-3xl mt-10 mb-5 font-bold">Cart is Empty</h2>
+        <Link
+          href="/product"
+          className="flex-c-m stext-103  size-102 btn-m-lm p-lr-15 trans-04 js-show-modal1"
+        >
+          Shop
+        </Link>
+      </div>
+    );
+  }
+
   return (
-    <>
+    <section>
     {/* breadcrumb */}
     <div className="container lg:mt-20">
       <div className="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
-        <a href="index.html" className="stext-109 cl8 hov-cl1 trans-04">
+        <a href="/" className="stext-109 cl8 hov-cl1 trans-04">
           Home
           <i className="fa fa-angle-right m-l-9 m-r-10" aria-hidden="true" />
         </a>
@@ -19,9 +40,11 @@ const page = () => {
         <div className="row">
           <div className="col-lg-10 col-xl-7 m-lr-auto m-b-50">
             <div className="m-l-25 m-r--38 m-lr-0-xl">
-              <div className="wrap-table-shopping-cart">
+             
+            <div className="wrap-table-shopping-cart">
                 <table className="table-shopping-cart">
-                  <tbody>
+                
+                <thead>
                     <tr className="table_head">
                       <th className="column-1">Product</th>
                       <th className="column-2" />
@@ -29,6 +52,8 @@ const page = () => {
                       <th className="column-4">Quantity</th>
                       <th className="column-5">Total</th>
                     </tr>
+                    </thead>
+                    <tbody>
                     <tr className="table_row">
                       <td className="column-1">
                         <div className="how-itemcart1">
@@ -171,7 +196,7 @@ const page = () => {
         </div>
       </div>
     </form>
-  </>
+  </section>
   
   )
 }

@@ -1,6 +1,8 @@
+"use client"
 import React, { useEffect, useState } from 'react'
 import ProductOperation from '../_components/Products/ProductOperation'
 import Link from 'next/link'
+import axios from 'axios'
 
 const page = () => {
 
@@ -12,15 +14,10 @@ const page = () => {
   },[])
 
   const [data,setData]=useState([]);
-
   const getApi=async ()=>{
-
     axios.get("/api/products").then((res)=>{
-  
       setData(res.data.data)
-     
     })
-
   }
 
   if(!data) return <h1>Loding.....</h1>
@@ -40,16 +37,17 @@ const page = () => {
         
     
       {data.map((item,idx)=>{
-        return(  <div className="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
+        return( 
+           <div key={idx} className="col-sm-6 col-md-4 col-lg-3 p-b-35 isotope-item women">
         {/* Block2 */}
         <div className="block2">
           <div className="block2-pic hov-img0">
             <img src={item.images[0]?.url} alt="IMG-PRODUCT" />
             <Link
-            href="shopingcart"
+            href={`productdetail/${item.id}`}
             className="block2-btn flex-c-m stext-103  size-102 btn-m-lm p-lr-15 trans-04 js-show-modal1"
           >
-            Add To Cart
+            Buy Now
           </Link>
           </div>
           <div className="block2-txt flex-w flex-t p-t-14">
@@ -62,9 +60,7 @@ const page = () => {
               </a>
               <span className="stext-105 cl3">Rs. {item.price}</span>
             </div>
-            <div className="block2-txt-child2 flex-r p-t-3">
-              
-            </div>
+           
           </div>
         </div>
       </div>)
