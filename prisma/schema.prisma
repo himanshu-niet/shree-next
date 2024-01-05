@@ -37,6 +37,8 @@ model Product {
 }
 
 
+
+
 model ProductUrl {
   url       String
   productId String

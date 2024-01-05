@@ -40,6 +40,7 @@ const page = ({ params }) => {
   
   const onAddToCart = (product) => {
     product.quantity=quantity || 1;
+    product.discountPrice=getOfferPrice(product.price,product.discount) || product.price
     addItemToCart(product);
     alert("Added to cart");
   };

@@ -6,8 +6,12 @@ import NavSearch from './NavSearch';
 import Link from 'next/link';
 import Auth from './Auth';
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
+import useCartStore from '@/utils/store/cart';
 
 const Header = () => {
+  const cartItems = useCartStore(state => state.cartItems);
+
+
   const pathname = usePathname();
 
   const [fix, setFix] = useState(false)
@@ -114,7 +118,7 @@ const Header = () => {
               <Link href="shopingcart">
                 <div
                   className="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 icon-header-noti js-show-cart"
-                  data-notify={2}
+                  data-notify={cartItems.length}
                 >
                   <i className="zmdi zmdi-shopping-cart" />
                 </div>
@@ -140,7 +144,7 @@ const Header = () => {
           <Link href="shopingcart">
           <div
             className="icon-header-item cl2 hov-cl1 trans-04 p-r-11 p-l-10 icon-header-noti js-show-cart"
-            data-notify={2}
+            data-notify={cartItems.length}
           >
             <i className="zmdi zmdi-shopping-cart" />
           </div>

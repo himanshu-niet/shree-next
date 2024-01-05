@@ -30,7 +30,7 @@ const page = () => {
           <div className="col-11 col-md-5 col-lg-4 m-lr-auto">
             <div className="how-bor1 ">
               <div className="hov-img0">
-                <img src="images/about-01.jpg" alt="IMG" />
+                <img src="imgCard/about1.jpg" alt="IMG" />
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@ const page = () => {
           <div className="order-md-1 col-11 col-md-5 col-lg-4 m-lr-auto p-b-30">
             <div className="how-bor2">
               <div className="hov-img0">
-                <img src="images/about-02.jpg" alt="IMG" />
+                <img src="imgCard/about2.jpg" alt="IMG" />
               </div>
             </div>
           </div>

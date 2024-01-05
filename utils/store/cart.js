@@ -19,7 +19,7 @@ const useCartStore = create(
 
           set({ cartItems: [...get().cartItems] })
         } else {
-          set({ cartItems: [...get().cartItems, { ...item, quantity: 1 }] })
+          set({ cartItems: [...get().cartItems, { ...item }] })
         }
       },
 
@@ -30,7 +30,9 @@ const useCartStore = create(
 
         if (itemExists) {
           if (typeof itemExists.quantity === "number") {
-            itemExists.quantity++
+            if(itemExists.stock>itemExists.quantity){
+              itemExists.quantity++
+            }
           }
 
           set({ cartItems: [...get().cartItems] })

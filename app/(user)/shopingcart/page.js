@@ -1,30 +1,22 @@
 "use client"
 import useCartStore from '@/utils/store/cart';
-import Link from 'next/link';
 
 import React from 'react'
+import Tr from '../_components/Tr';
+import { calculateTotalCost } from '@/utils/fetuers';
 const page = () => {
 
   const cartItems = useCartStore(state => state.cartItems);
-  console.log(cartItems)
 
-  if (cartItems && cartItems.length < 1) {
-    return (
-      <div className="h-72 flex flex-col items-center justify-center">
-        <h2 className="text-3xl mt-10 mb-5 font-bold">Cart is Empty</h2>
-        <Link
-          href="/product"
-          className="flex-c-m stext-103  size-102 btn-m-lm p-lr-15 trans-04 js-show-modal1"
-        >
-          Shop
-        </Link>
-      </div>
-    );
-  }
+
+  // if (cartItems && cartItems.length < 1) {
+  //   return <p>Loding..</p>
+  // }
 
   return (
-    <section>
+    <>
     {/* breadcrumb */}
+    
     <div className="container lg:mt-20">
       <div className="bread-crumb flex-w p-l-25 p-r-15 p-t-30 p-lr-0-lg">
         <a href="/" className="stext-109 cl8 hov-cl1 trans-04">
@@ -54,58 +46,11 @@ const page = () => {
                     </tr>
                     </thead>
                     <tbody>
-                    <tr className="table_row">
-                      <td className="column-1">
-                        <div className="how-itemcart1">
-                          <img src="images/item6.jpg" alt="IMG" />
-                        </div>
-                      </td>
-                      <td className="column-2">Water Zari</td>
-                      <td className="column-3">₹ 3006.00</td>
-                      <td className="column-4">
-                        <div className="wrap-num-product flex-w m-l-auto m-r-0">
-                          <div className="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-                            <i className="fs-16 zmdi zmdi-minus" />
-                          </div>
-                          <input
-                            className="mtext-104 cl3 txt-center num-product"
-                            type="number"
-                            name="num-product1"
-                            defaultValue={1}
-                          />
-                          <div className="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
-                            <i className="fs-16 zmdi zmdi-plus" />
-                          </div>
-                        </div>
-                      </td>
-                      <td className="column-5">₹ 3006.00</td>
-                    </tr>
-                    <tr className="table_row">
-                      <td className="column-1">
-                        <div className="how-itemcart1">
-                          <img src="images/item7.jpg" alt="IMG" />
-                        </div>
-                      </td>
-                      <td className="column-2">Katan Jaal Work</td>
-                      <td className="column-3">₹ 2000.00</td>
-                      <td className="column-4">
-                        <div className="wrap-num-product flex-w m-l-auto m-r-0">
-                          <div className="btn-num-product-down cl8 hov-btn3 trans-04 flex-c-m">
-                            <i className="fs-16 zmdi zmdi-minus" />
-                          </div>
-                          <input
-                            className="mtext-104 cl3 txt-center num-product"
-                            type="number"
-                            name="num-product2"
-                            defaultValue={1}
-                          />
-                          <div className="btn-num-product-up cl8 hov-btn3 trans-04 flex-c-m">
-                            <i className="fs-16 zmdi zmdi-plus" />
-                          </div>
-                        </div>
-                      </td>
-                      <td className="column-5">₹ 2000.00</td>
-                    </tr>
+
+                    {cartItems.map((item,idx)=>{
+                      return <Tr key={idx} item={item}/>
+                    })}
+
                   </tbody>
                 </table>
               </div>
@@ -121,9 +66,7 @@ const page = () => {
                     Apply coupon
                   </div>
                 </div>
-                <div className="flex-c-m stext-101 cl2 size-119 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer m-tb-10">
-                  Update Cart
-                </div>
+                
               </div>
             </div>
           </div>
@@ -132,62 +75,22 @@ const page = () => {
               <h4 className="mtext-109 cl2 p-b-30">Cart Totals</h4>
               <div className="flex-w flex-t bor12 p-b-13">
                 <div className="size-208">
-                  <span className="stext-110 cl2">Subtotal:</span>
+                  <span className="stext-110 cl2">Total Items:</span>
                 </div>
                 <div className="size-209">
-                  <span className="mtext-110 cl2">₹5006.00</span>
+                  <span className="mtext-110 cl2">{cartItems.length}</span>
                 </div>
               </div>
-              <div className="flex-w flex-t bor12 p-t-15 p-b-30">
-                <div className="size-208 w-full-ssm">
-                  <span className="stext-110 cl2">Shipping:</span>
-                </div>
-                <div className="size-209 p-r-18 p-r-0-sm w-full-ssm">
-                  <p className="stext-111 cl6 p-t-2">
-                    There are no shipping methods available. Please double check
-                    your address, or contact us if you need any help.
-                  </p>
-                  <div className="p-t-15">
-                    <span className="stext-112 cl8">Calculate Shipping</span>
-                    <div className="rs1-select2 rs2-select2 bor8 bg0 m-b-12 m-t-9">
-                      <select className="js-select2" name="time">
-                        <option>Select a country...</option>
-                        <option>India</option>
-                      </select>
-                      <div className="dropDownSelect2" />
-                    </div>
-                    <div className="bor8 bg0 m-b-12">
-                      <input
-                        className="stext-111 cl8 plh3 size-111 p-lr-15"
-                        type="text"
-                        name="state"
-                        placeholder="State /  country"
-                      />
-                    </div>
-                    <div className="bor8 bg0 m-b-22">
-                      <input
-                        className="stext-111 cl8 plh3 size-111 p-lr-15"
-                        type="text"
-                        name="postcode"
-                        placeholder="Postcode / Zip"
-                      />
-                    </div>
-                    <div className="flex-w">
-                      <div className="flex-c-m stext-101 cl2 size-115 bg8 bor13 hov-btn3 p-lr-15 trans-04 pointer">
-                        Update Totals
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+             
               <div className="flex-w flex-t p-t-27 p-b-33">
                 <div className="size-208">
                   <span className="mtext-101 cl2">Total:</span>
                 </div>
                 <div className="size-209 p-t-1">
-                  <span className="mtext-110 cl2">₹5006.00</span>
+                  <span className="mtext-110 cl2">₹{calculateTotalCost(cartItems).toFixed(2)}</span>
                 </div>
               </div>
+              
               <button className="flex-c-m stext-101 cl0 size-116 bg3 bor14 hov-btn3 p-lr-15 trans-04 pointer">
                 Proceed to Checkout
               </button>
@@ -196,7 +99,7 @@ const page = () => {
         </div>
       </div>
     </form>
-  </section>
+  </>
   
   )
 }

@@ -8,6 +8,12 @@ module.exports={
         const discount = (originalPrice * discountPercentage) / 100;
         const offerPrice = originalPrice - discount;
         return offerPrice;
-    }
+    },
+
+   calculateTotalCost(products) {
+        return products.reduce((total, product) => {
+          return (total + (product.discountPrice * product.quantity))
+        }, 0);
+      }
 
 }

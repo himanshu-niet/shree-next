@@ -128,7 +128,7 @@ const Footer = () => {
             {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
             Copyright © 2023 Bunkar Banaras. All rights reserved | Developed by 
             {" "}
-           <Link href="https://cybronical.com/" target="_blank">
+           <Link className='text-white hover:text-blue-300' href="https://cybronical.com/" target="_blank">
             Cybronical India
            </Link>{" "}
             

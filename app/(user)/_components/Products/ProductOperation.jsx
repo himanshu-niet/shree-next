@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState } from 'react'
 
 const ProductOperation = () => {
@@ -10,36 +11,36 @@ const ProductOperation = () => {
   return (
     <div className="flex-w flex-sb-m p-b-52">
         <div className="flex-w flex-l-m filter-tope-group m-tb-10">
-          <button
+          <Link
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1"
-            data-filter="*"
+            href="product"
           >
             All Products
-          </button>
-          <button
+          </Link>
+          <Link
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
-            data-filter=".women"
+            href="product?category=Georgette"
           >
           Georgette Sarees
-          </button>
-          <button
+          </Link>
+          <Link
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
-            data-filter=".men"
+            href="product?category=Katan"
           >
           Katan Silk Sarees
-          </button>
-          <button
+          </Link>
+          <Link
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
-            data-filter=".bag"
+            href="product?category=Tussar"
           >
           Tussar Silk Sarees
-          </button>
-          <button
+          </Link>
+          <Link
             className="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5"
-            data-filter=".shoes"
+             href="product?category=Kora"
           >
           Kora Silk Sarees
-          </button>
+          </Link>
         
         </div>
 
@@ -64,17 +65,18 @@ const ProductOperation = () => {
         {/* Search product */}
         
         <div className={` panel-search w-full p-t-10 p-b-15 ${searchT?'dis-block':'dis-none'}`}>
-          <div className="bor8 dis-flex p-l-15">
-            <button className="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04">
+          <form className="bor8 dis-flex p-l-15">
+            <button className="size-113 flex-c-m fs-16 cl2 hov-cl1 trans-04"
+            >
               <i className="zmdi zmdi-search" />
             </button>
             <input
               className="mtext-107 cl2 size-114 plh2 p-r-15"
               type="text"
-              name="search-product"
+              name="search"
               placeholder="Search"
             />
-          </div>
+          </form>
         </div>
 
         {/* Filter */}
@@ -86,22 +88,22 @@ const ProductOperation = () => {
              
                
                 <li className="p-b-6">
-                  <a
-                    href="#"
-                    className="filter-link stext-106 trans-04 filter-link-active"
+                  <Link
+                    href="product?sort=newest"
+                    className="filter-link stext-106 trans-04 "
                   >
                     Newest
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link   href="product?sort=low-to-high" className="filter-link stext-106 trans-04">
                     Price: Low to High
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link   href="product?sort=high-to-low" className="filter-link stext-106 trans-04">
                     Price: High to Low
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -109,32 +111,32 @@ const ProductOperation = () => {
               <div className="mtext-102 cl2 p-b-15">Price</div>
               <ul>
                 <li className="p-b-6">
-                  <a
-                    href="#"
-                    className="filter-link stext-106 trans-04 filter-link-active"
+                  <Link
+                  href="product?price=all"
+                    className="filter-link stext-106 trans-04 "
                   >
                     All
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link href="product?price=0" className="filter-link stext-106 trans-04">
                     ₹0 - ₹5000
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link href="product?price=1" className="filter-link stext-106 trans-04">
                     ₹5001 - ₹10000
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link href="product?price=2" className="filter-link stext-106 trans-04">
                     ₹10001 - ₹15000
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link href="product?price=3" className="filter-link stext-106 trans-04">
                     ₹15001+
-                  </a>
+                  </Link>
                 </li>
                
               </ul>
@@ -146,9 +148,10 @@ const ProductOperation = () => {
                   <span className="fs-15 lh-12 m-r-6" style={{ color: "#222" }}>
                     <i className="zmdi zmdi-circle" />
                   </span>
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link
+                  href="product?color=Black" className="filter-link stext-106 trans-04">
                     Black
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
                   <span
@@ -157,12 +160,12 @@ const ProductOperation = () => {
                   >
                     <i className="zmdi zmdi-circle" />
                   </span>
-                  <a
-                    href="#"
-                    className="filter-link stext-106 trans-04 filter-link-active"
+                  <Link
+                  href="product?color=Blue"
+                    className="filter-link stext-106 trans-04 "
                   >
                     Blue
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
                   <span
@@ -171,9 +174,10 @@ const ProductOperation = () => {
                   >
                     <i className="zmdi zmdi-circle" />
                   </span>
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link
+                  href="product?color=Pink" className="filter-link stext-106 trans-04">
                     Pink
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
                   <span
@@ -182,9 +186,11 @@ const ProductOperation = () => {
                   >
                     <i className="zmdi zmdi-circle" />
                   </span>
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link
+                  href="product?color=Green"
+                   className="filter-link stext-106 trans-04">
                     Green
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
                   <span
@@ -193,65 +199,68 @@ const ProductOperation = () => {
                   >
                     <i className="zmdi zmdi-circle" />
                   </span>
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link
+                  href="product?color=Red"
+                  className="filter-link stext-106 trans-04">
                     Red
-                  </a>
+                  </Link>
                 </li>
                 <li className="p-b-6">
                   <span className="fs-15 lh-12 m-r-6" style={{ color: "#aaa" }}>
                     <i className="zmdi zmdi-circle-o" />
                   </span>
-                  <a href="#" className="filter-link stext-106 trans-04">
+                  <Link
+                  href="product?color=uncategorized" className="filter-link stext-106 trans-04">
                   uncategorized
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
             <div className="filter-col4 p-b-27">
               <div className="mtext-102 cl2 p-b-15">Tags</div>
               <div className="flex-w p-t-4 m-r--5">
-                <a
-                  href="#"
+                <Link
+                href="product?subCategory=Silver"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
                 Silver Zari
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                href="product?subCategory=Water"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
                 Water Zari
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                href="product?subCategory=Jaal"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
                 Jaal Work
-                </a>
-                <a
-                href="#"
+                </Link>
+                <Link
+                href="product?subCategory=Gold"
                 className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
               >
               Gold Zari
-              </a>
-                <a
-                  href="#"
+              </Link>
+                <Link
+                href="product?subCategory=Kadua Motifs"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
                 Kadua Motifs
-                </a>
-                <a
-                href="#"
+                </Link>
+                <Link
+                href="product?subCategory=Antique"
                 className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
               >
               Antique Zari
-              </a>
-                <a
-                  href="#"
+              </Link>
+                <Link
+                  href="product?subCategory=Kadua Jangla"
                   className="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5"
                 >
                 Kadua Jangla
-                </a>
+                </Link>
 
                
 

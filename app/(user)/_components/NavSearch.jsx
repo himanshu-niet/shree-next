@@ -17,7 +17,7 @@ const NavSearch = () => {
       <button className="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search" onClick={()=>setShow(false)}>
         <img src="images/icons/icon-close2.png" alt="CLOSE" />
       </button>
-      <form className="wrap-search-header flex-w p-l-15">
+      <form action="product" className="wrap-search-header flex-w p-l-15">
         <button className="flex-c-m trans-04">
           <i className="zmdi zmdi-search" />
         </button>

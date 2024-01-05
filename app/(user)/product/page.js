@@ -3,27 +3,44 @@ import React, { useEffect, useState } from 'react'
 import ProductOperation from '../_components/Products/ProductOperation'
 import Link from 'next/link'
 import axios from 'axios'
+import { useSearchParams } from 'next/navigation'
 
 const page = () => {
-
+  const searchParams = useSearchParams()
+  
 
   useEffect(()=>{
+    const search = searchParams.get('search')
+    const category = searchParams.get('category')
+    const subCategory = searchParams.get('subCategory')
+    const color = searchParams.get('color')
+    const sort = searchParams.get('sort')
+    const price = searchParams.get('price')
 
-    getApi()
+    let url=`/api/products`;
 
-  },[])
+    url=search?url+`?search=${search}`:url;
+    url=category?url+`?category=${category}`:url;
+    url=subCategory?url+`?subCategory=${subCategory}`:url;
+    url=color?url+`?color=${color}`:url;
+    url=sort?url+`?sort=${sort}`:url;
+    url=price?url+`?price=${price}`:url;
 
-  const [data,setData]=useState([]);
-  const getApi=async ()=>{
-    axios.get("/api/products").then((res)=>{
+    getApi(url)
+
+  },[searchParams])
+
+  const [data,setData]=useState(false);
+
+  const getApi=async (url)=>{
+    console.log(url)
+    axios.get(url).then((res)=>{
       setData(res.data.data)
     })
   }
 
   if(!data) return <h1>Loding.....</h1>
 
- 
-  
 
   return (
     <div className="bg0  lg:mt-24 p-b-140">
@@ -35,6 +52,7 @@ const page = () => {
 
       <div className="row isotope-grid">
         
+      {data.length<1?<h4>Product Not Found</h4>:""}
     
       {data.map((item,idx)=>{
         return( 

@@ -4,8 +4,8 @@ import {Providers} from "./providers";
 
 
 export const metadata = {
-  title: 'Bunkar Banaras',
-  description: 'Bunkar Banaras',
+  title: 'Bunkar Banaras - Elegance Woven in Every Thread',
+  description: 'Bunkar Banaras - Elegance Woven in Every Thread',
 }
 
 export default function RootLayout({ children }) {
